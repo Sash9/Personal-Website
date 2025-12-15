@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+  border-width: 0px;
+  border-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  border-image: none;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -9,6 +17,20 @@ html, body {
 }
 
 @layer utilities {
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+    .animate-blink {
+      animation: blink 0.8s step-end infinite;
+    }
+
   @keyframes loading {
     0% {
       transform: translateX(-100%);
@@ -20,4 +42,38 @@ html, body {
   .animate-loading-bar {
     animation: loading 0.8s ease infinite;
   }
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Component-specific font overrides */
+section#home h1.text-6xl {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+section#home p.text-xl {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+nav div.text-2xl {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+nav button.text-lg {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
 }
