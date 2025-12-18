@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap");
 @import "tailwindcss";
 
 html {
@@ -8,10 +9,11 @@ html {
   border-image: none;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  font-family: Georgia, serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: #0a0a0a;
   color: #f3f4f6;
 }
@@ -63,17 +65,17 @@ html, body {
 
 /* Component-specific font overrides */
 section#home h1.text-6xl {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 section#home p.text-xl {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 nav div.text-2xl {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 nav button.text-lg {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }

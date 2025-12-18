@@ -9,7 +9,7 @@ export const Navbar = () => {
       setIsScrolled(window.scrollY > 50);
 
       // Update active section based on scroll position
-      const sections = ['home', 'projects', 'contact'];
+      const sections = ['home', 'experience', 'projects', 'contact'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -43,14 +43,13 @@ export const Navbar = () => {
       isScrolled ? 'bg-black/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
       <div className="max-w-6xl mx-auto px-6 py-4">
-        <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-gray-100 cursor-pointer" onClick={() => scrollToSection('home')}>
-            Sashank's Domain
-          </div>
+        <div className="flex justify-end items-end">
+          
 
           <div className="hidden md:flex space-x-8">
             {[
               { id: 'home', label: 'Home' },
+              { id: 'experience', label: 'Experience' },
               { id: 'projects', label: 'Projects' },
               { id: 'contact', label: 'Contact' }
             ].map(({ id, label }) => (
