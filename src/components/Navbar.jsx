@@ -43,7 +43,7 @@ export const Navbar = () => {
       isScrolled ? 'bg-black/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
       <div className="max-w-6xl mx-auto px-6 py-4">
-        <div className="flex justify-end items-end">
+        <div className="flex justify-end items-start">
           
 
           <div className="hidden md:flex space-x-8">

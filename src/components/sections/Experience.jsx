@@ -1,29 +1,34 @@
 export const Experience = () => {
   const experiences = [
     {
-      company: "Your Company",
-      role: "Your Role",
-      period: "Start — Present",
-      location: "Location",
-      summary:
-        "Briefly describe what you do here. Focus on outcomes, impact, and the main technologies you use.",
+      company: "Wellness Center for Older Adults",
+      role: "Software Engineer",
+      period: "Aug 2025 — Dec 2025",
+      location: "Richardson, TX",
       highlights: [
-        "Highlight a key impact or metric.",
-        "Call out a system, feature, or tool you led.",
-        "Mention collaboration or ownership that mattered."
+        "Collaborated with 4 developers in a Scrum Agile environment, delivering an emergency ride sharing application for 200+ senior citizens at the Wellness Center for Old Adults non profit organization.",
+        "Developed backend infrastructure and optimized database queries, processing 500+ ride requests.",
+        "Debugged issues and tested core features of the application, ensuring reliability and ease of use for senior citizens."
       ]
     },
     {
-      company: "Another Team",
-      role: "Role Title",
-      period: "Year — Year",
-      location: "Location",
-      summary:
-        "Add another experience entry. Keep it concise and outcome-oriented.",
+      company: "UTD Society of Automotive Engineers",
+      role: "Cloud Data Engineer",
+      period: "Sep 2025 — Present",
+      location: "Richardson, TX",
       highlights: [
-        "What changed because of your work?",
-        "Which stack or tools were essential?",
-        "Any noteworthy launch or recognition?"
+        "Designed and implemented a relational database and entity relationship diagram for a cloud telemetry system, modeling 5+ entities and optimizing queries for 10,000+ sensor readings to enhance car performance.",
+        "Created a testing environment by deploying and configuring a PostgreSQL instance in cloud computing technology Azure to enable safe testing."
+      ]
+    },
+    {
+      company: "UTD Society of Artificial Intelligence and Medicine",
+      role: "Project Director",
+      period: "Sep 2025 — Dec 2025",
+      location: "Richardson, TX",
+      highlights: [
+        "Designed and implemented a relational database and entity relationship diagram for a cloud telemetry system, modeling 5+ entities and optimizing Led a team of 5 developers to develop a national disease tracker by analyzing 100K+ public health reports using NLP keywords and forecasting disease trends with time series analysis. for 10,000+ sensor readings to enhance car performance.",
+        "Coordinated task assignments by managing 4+ sprints and 20+ standups in a Scrum Agile environment, ensuring timely delivery of project milestones."
       ]
     }
   ];
